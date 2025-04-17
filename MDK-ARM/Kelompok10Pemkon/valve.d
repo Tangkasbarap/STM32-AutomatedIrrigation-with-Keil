@@ -1,4 +1,4 @@
-kelompok10pemkon/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
+kelompok10pemkon/valve.o: ..\Core\Src\valve.c ..\Core\Inc\valve.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -26,7 +26,4 @@ kelompok10pemkon/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Core\Inc\sensor.h ..\Core\Inc\pompa.h ..\Core\Inc\valve.h \
-  ..\Core\Inc\relay.h ..\Core\Inc\lcd.h ..\Core\Inc\i2c-lcd.h \
-  ..\Core\Inc\timer.h
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h

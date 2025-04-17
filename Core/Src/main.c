@@ -17,7 +17,16 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+
 #include "main.h"
+#include "sensor.h"
+#include "pompa.h"
+#include "valve.h"
+#include "relay.h"
+#include "lcd.h"
+#include "i2c-lcd.h"
+#include "timer.h"
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -104,8 +113,26 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	HAL_TIM_Base_Start(&htim2);
+	LCD_Init();
   while (1)
-  {
+  {	
+		uint16_t kelembaban = Sensor_BacaKelembaban();
+    LCD_TampilkanNilai(kelembaban);
+
+    if (kelembaban < 2000U)
+    {
+        Pompa_Nyalakan();
+        HAL_Delay(3000U);  /* Koreksi delay penyerapan air */
+        Valve_Nyalakan();
+    }
+    else
+    {
+        Valve_Matikan();
+        Pompa_Matikan();
+    }
+
+    HAL_Delay(1000U);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

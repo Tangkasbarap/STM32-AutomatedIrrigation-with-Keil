@@ -5,6 +5,6 @@
 
 extern ADC_HandleTypeDef hadc1;
 
-uint16_t Baca_Kelembaban_Tanah(void);
+uint16_t Sensor_BacaKelembaban(void);
 
 #endif /* SENSOR_H_ */

@@ -9,6 +9,7 @@
 "kelompok10pemkon\main.o"
 "kelompok10pemkon\stm32f4xx_it.o"
 "kelompok10pemkon\stm32f4xx_hal_msp.o"
+"kelompok10pemkon\valve.o"
 "kelompok10pemkon\stm32f4xx_hal_adc.o"
 "kelompok10pemkon\stm32f4xx_hal_adc_ex.o"
 "kelompok10pemkon\stm32f4xx_ll_adc.o"
